@@ -1,0 +1,96 @@
+/* Plots */
+
+.tick line {
+  stroke: #c0c0bb;
+}
+
+.tick text {
+  fill: #8e8883;
+  font-size: 0.8em;
+  cursor: default;
+}
+
+.axis-label,
+.dropdown-label {
+  font-size: 1.25em;
+  fill: #8e8883;
+  color: #8e8883;
+}
+.dropdown-label {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.Dropdown-root {
+  width: 300px;
+  display: inline-block;
+}
+
+.Dropdown-menu {
+  max-height: 400px;
+}
+
+.menus-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* TimeBrush */
+.timemark {
+  fill: #176176;
+}
+
+.time-axis-label {
+  font-size: 1em;
+  fill: #8e8883;
+  color: #8e8883;
+}
+
+.histogram-background {
+  fill: #313131;
+}
+
+.viewer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  /* height: 80%; */
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  overflow: auto;
+}
+
+.viewer-container {
+  /* display: flex; */
+  /* height: 100%; */
+  flex-grow: 1;
+  margin-top: 1em;
+}
+
+.model-visualiser {
+  background-color: #ffffff;
+  /* flex-grow: 1; */
+  /* position: relative; */
+  height: 100%;
+}
+
+.node-details-panel {
+  overflow-y: auto;
+  width: 350px;
+  border: 3px solid #3b3b3b;
+  margin-left: 0.6em;
+}
+
+.checkbox-container {
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* .download-button-class {
+  margin-top: 10px;
+  background-color: #242424;
+} */

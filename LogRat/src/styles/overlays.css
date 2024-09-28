@@ -1,0 +1,161 @@
+.overlay-container {
+  position: absolute;
+  top: 10px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay-container-right {
+  right: 10px;
+}
+
+.overlay-container-left {
+  left: 10px;
+}
+
+.overlay-element {
+  cursor: pointer;
+  z-index: 2;
+  background: var(--ui-panel-background-color);
+  min-width: 190px;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+  width: 250px;
+  /* max-height: calc(100% - 20px); */
+}
+
+.options-container.hidden {
+  display: none;
+}
+
+.overlay-heading {
+  font-size: 18px;
+}
+.overlay-heading span {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.legend-section {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.legend-section-title {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.scrollable-container {
+  overflow-x: auto;
+  /* max-height: calc(100% - 40px); */
+  /* width: 250px; */
+  text-align: left;
+}
+.static-log-details {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.slider-container {
+  margin-left: 20px; /* Adjust this value as needed */
+}
+
+.slider-container label {
+  display: block; /* Makes the label display on its own line */
+}
+
+.slider-container div {
+  display: flex; /* Aligns the slider and the value horizontally */
+  align-items: center; /* Vertically centers the items in the flex container */
+}
+
+.slider-container input[type='range'] {
+  margin-right: 8px; /* Adds space between the slider and the value */
+}
+
+/* ========================================= */
+/* Legend */
+/* ========================================= */
+
+.bpmn-notation-container {
+  /* ... existing styles ... */
+}
+
+.bpmn-notation {
+  position: relative; /* Needed for absolute positioning of child elements */
+  cursor: pointer;
+}
+
+.notation-header {
+  display: flex;
+  align-items: center; /* Aligns the SVG and the name vertically */
+}
+
+.notation-header svg {
+  margin-right: 20px; /* Spacing between the SVG and the name */
+}
+
+.notation-description {
+  display: none; /* Hide by default */
+  text-align: left;
+  margin-top: 5px;
+}
+
+.notation-description p {
+  margin: 0; /* Removes default top and bottom margins from <p> */
+}
+
+.notation-description-popup {
+  position: absolute;
+  left: 100%; /* Position to the right of the notation */
+  top: 0;
+  width: 400px; /* Adjust width as needed */
+  background-color: var(--ui-panel-background-color);
+  /* border: 1px solid #ddd; 
+  /* padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  z-index: 100;
+  display: none;
+}
+
+.bpmn-notation:hover .notation-description-popup {
+  display: block; /* Show on hover */
+}
+
+.legend-difference-A,
+.legend-difference-B,
+.legend-difference-Both {
+  /* width: 80px; */
+  margin: 0 3px;
+  height: 25px;
+  border: 2px solid var(--graph-node-outline-color);
+}
+
+.legend-difference-A {
+  background-color: var(--graph-structural-difference-color-A);
+}
+
+.legend-difference-B {
+  background-color: var(--graph-structural-difference-color-B);
+}
+
+.legend-difference-Both {
+  background-color: var(--graph-node-color-default);
+}
+
+.legend-text {
+  dominant-baseline: middle;
+  text-anchor: middle;
+  font-weight: bold;
+  font-size: 14px;
+  fill: var(--graph-node-text-color-default);
+}

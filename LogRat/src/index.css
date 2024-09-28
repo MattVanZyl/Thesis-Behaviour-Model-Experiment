@@ -1,0 +1,139 @@
+:root {
+  /* Default dark theme */
+  /* --background-color: #424242; */
+  --background-color: #ececec;
+  /* #282828; */
+  --text-color: rgb(55, 55, 55);
+  --ui-border-color: #3b3b3b;
+  --ui-panel-background-color: #eaeaea;
+  --graph-grid-stroke-color: #454545;
+  --graph-ghost-color: #e4e4e4;
+  /* Button */
+  --button-bg-color: #b0b0b0;
+  --button-hover-bg-color: rgb(138, 136, 145);
+  /* Graph Colours */
+
+  --graph-node-color-default: rgb(89, 89, 89);
+  --graph-node-text-color-default: rgb(255, 255, 255);
+  --graph-edge-color-default: rgb(89, 89, 89);
+
+  --graph-contrast-color-A: rgb(141, 255, 118);
+  --graph-contrast-color-B: rgb(252, 62, 62);
+
+  --color-count-single-min: blue;
+  --color-count-single-max: red;
+  --color-count-contrast-min: rgb(99, 248, 99);
+  --color-count-contrast-mid: #d1d1d1;
+  --color-count-contrast-max: rgb(255, 106, 106);
+
+  --graph-node-outline-color: #535353;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.light-theme {
+  /* Light theme overrides */
+  --background-color: #fff;
+  --text-color: rgb(54, 54, 54);
+  --ui-border-color: #c0c0c0;
+  --ui-panel-background-color: #dddddd;
+  --graph-grid-stroke-color: #f8f8f8;
+  --graph-ghost-color: #bababa;
+  /* Button */
+  --button-bg-color: #e0e0e0;
+  --button-hover-bg-color: #c0c0c0;
+  /* Graph Colours */
+  --graph-contrast-color-A: orange;
+  --graph-contrast-color-B: cyan;
+  --graph-node-color-default: #c7c7c7;
+  --graph-node-text-color-default: rgb(28, 28, 28);
+  --graph-edge-color-default: #4e4e4e;
+
+  --color-count-single-min: #999999;
+  --color-count-single-max: #263fff;
+  --color-count-A-min: #999999;
+  --color-count-A-max: #6e33ff;
+  --color-count-B-min: #999999;
+  --color-count-B-max: #ffba21;
+  --color-count-contrast-min: rgb(99, 248, 99);
+  --color-count-contrast-mid: #bdbdbd;
+  --color-count-contrast-max: rgb(255, 106, 106);
+
+  --graph-node-outline-color: #262626;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  display: flex;
+  place-items: top;
+  min-width: 320px;
+  min-height: 100vh;
+
+  transition:
+    background-color 0.3s ease-out,
+    color 0.3s;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  background-color: var(--button-bg-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  border: 1.5px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition:
+    border-color 0.25s,
+    background-color 0.3s,
+    color 0.3s;
+
+  &:hover {
+    border-color: var(--button-hover-border-color);
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */

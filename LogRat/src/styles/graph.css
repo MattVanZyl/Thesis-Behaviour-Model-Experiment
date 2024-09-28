@@ -1,0 +1,103 @@
+.grid-pattern path {
+  fill: none;
+  stroke: var(--graph-grid-stroke-color);
+  stroke-width: 8;
+
+  transition: stroke 0.3s;
+}
+
+.ghost-graph-node,
+.ghost-graph-node text {
+  fill: var(--graph-ghost-color);
+  transition: fill 0.3s;
+}
+
+.ghost-graph-node .bpmn-node {
+  stroke: none;
+}
+
+.ghost-graph-edge {
+  stroke: var(--graph-ghost-color);
+  fill: var(--graph-ghost-color);
+  transition:
+    stroke 0.3s,
+    fill 0.3s;
+}
+
+.graph-hidden {
+  display: none;
+}
+
+.graph-difference-A {
+  fill: var(--graph-structural-difference-color-A);
+}
+
+.graph-difference-B {
+  fill: var(--graph-structural-difference-color-B);
+}
+
+.graph-difference-A path {
+  stroke: var(--graph-structural-difference-color-A);
+}
+
+.graph-difference-B path {
+  stroke: var(--graph-structural-difference-color-B);
+}
+
+.graph-default {
+  fill: var(--graph-node-color-default);
+}
+
+.graph-edge-default {
+  fill: var(--graph-edge-color-default);
+}
+
+.graph-edge-default path {
+  stroke: var(--graph-edge-color-default);
+}
+
+.bpmn-node {
+  stroke-width: 2px;
+  stroke: var(--graph-node-outline-color);
+}
+
+.bpmn-node-text {
+  fill: var(--graph-node-text-color-default); /* or any other color variable or value you prefer */
+}
+
+.bpmn-edge {
+  stroke-width: 2px;
+  stroke: var(--graph-node-outline-color);
+}
+
+.blackbox-style {
+  /* Style for the rectangle part of the black box */
+  stroke: var(--graph-node-color-default); /* Border color */
+  stroke-width: 3px; /* Border width */
+}
+
+.blackbox-text-style {
+  /* Style for the text label inside the black box */
+  fill: var(--graph-node-color-default); /* Text color */
+  font-family: Arial, sans-serif; /* Font family */
+  font-size: 14px; /* Font size */
+}
+
+.blackbox-hatch-pattern {
+  stroke: var(--graph-edge-color-default); /* Default hatch pattern color */
+  stroke-width: 3px;
+}
+
+/* .added-in-graph-B {
+  stroke: white;
+  stroke-width: 7px;
+} */
+
+.added-in-graph-B {
+  fill: rgb(255, 179, 242);
+}
+
+.added-in-graph-B path {
+  stroke: rgb(255, 179, 242);
+  stroke-width: 10px;
+}
